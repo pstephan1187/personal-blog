@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.site-container {
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+
+.site-left-bar {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  flex: 1 1 25%;
+}
+
+.site-left-bar .site-nav {
+  list-style: none;
+}
+
+.site-content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  flex: 1 1 75%;
+}
+
+/*# sourceMappingURL=main.css.map */

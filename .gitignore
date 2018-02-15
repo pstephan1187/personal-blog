@@ -1,0 +1,6 @@
+/build_local/
+/node_modules/
+/vendor/
+/.vscode/
+/build_production/
+/*.psd

@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "gulp": "^3.8.8",
+    "hasbin": "^1.2.3",
+    "laravel-elixir": "^6.0.0-15",
+    "laravel-elixir-browsersync-official": "^1.0.0",
+    "laravel-elixir-webpack-official": "^1.0.10",
+    "normalize.css": "^7.0.0",
+    "popper.js": "^1.12.5",
+    "yargs": "^4.6.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "foundation-sites": "^6.4.1",
+    "jquery": "^3.2.1"
+  }
+}

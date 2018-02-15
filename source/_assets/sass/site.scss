@@ -1,0 +1,134 @@
+
+@import "./_settings.scss";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+@each $color, $value in $theme-colors {
+  .bg-hue-#{$color} {
+  	background-color: $value;
+  	background-blend-mode: multiply;
+  }
+}
+
+a {
+	// color: darken($red, 20%);
+	color: $red;
+
+	// &:hover {
+	// 	color: darken($red, 100%)
+	// }
+}
+
+code {
+	background-color: $gray-200;
+}
+
+#master-hero {
+	background-image: url('/images/caspar-rubin-224229.jpg');
+	background-size: cover;
+	background-position: center center;
+	@extend .bg-hue-secondary;
+}
+
+a.social-icon {
+	color: $green;
+	text-decoration: none;
+
+	&:hover {
+		color: darken($green, 10%);
+	}
+
+	#footer & {
+		color: $gray-600;
+
+		&:hover {
+			color: darken($gray-600, 10%);
+		}
+	}
+}
+
+.jumbotron {
+	position: relative;
+	// background: none;
+	mix-blend-mode: multiply;
+	background-color: $red;
+
+	&::after {
+		content: "";
+		opacity: 0.6;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;   
+		background-size: cover;
+		background-position: 50% 50%;
+		@extend .bg-hue-secondary;
+	}
+
+	.image-credits {
+		position: absolute;
+	    bottom: -30px;
+	    right: 20px;
+	    font-size: $small-font-size;
+
+	    a {
+		    color: lighten($red, 10%);
+		}
+	}
+
+	h1, h3, p, a {
+		color: lighten($red, 45%);
+	}
+
+	a:hover {
+		color: lighten($red, 35%);
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.jumbotron .image-credits {
+	    bottom: -60px;
+	}
+}
+
+.listing-lg {
+
+	img {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+.text-img-left {
+	@extend .rounded;
+	@extend .float-left;
+	@extend .img-fluid;
+	@extend .mr-3;
+}
+
+.post-title {
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+body {
+	background-color: $gray-100;
+	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='" + $green + "' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
+	.token.operator {
+		background: none;
+	}
+}
+
+.btn {
+	cursor: pointer;
+}
