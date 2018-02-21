@@ -8,6 +8,10 @@ image_link: https://unsplash.com/photos/CLm3pWXrS9Q
 photographer: Tim Trad
 ---
 
+<div class="alert alert-danger">
+  After using this method for a week or so, I began running into issues with data integrity. Some of my database tables are becoming unreadable. I cannot recommend the method below for the time being. If you know the issue and can recommend a way to keep this from happening. I would appreciate it.
+</div>
+
 There can be many reasons why you have to destroy your homestead box and start over. Of course, that is one of the benefits to using a virtual machine, it is supposed to be disposable. But often times, we avoid destroying the box as much as possible because doing so will destroy any databases on the box.
 
 Many times, you have data in there you don't want to have to recreate. So how do you save your database? One possible method is to dump your database into a `.sql` file and then re-import it in your new box. Of course, this can be time consuming if you have gigabytes worth of database data.
