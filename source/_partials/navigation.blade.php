@@ -20,6 +20,9 @@
                         <a class="nav-link" href="{{ $other_page->getPath() }}">{{ $other_page->title }}</a>
                     </li>
                 @endforeach
+                <li class="nav-item">
+                    <a class="nav-link" href="/resume.pdf" target="_blank">Resume</a>
+                </li>
             </ul>
         </div>
     </div>

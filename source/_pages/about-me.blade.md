@@ -1,6 +1,6 @@
 ---
 title: About Me
-sort_order: 3
+sort_order: 4
 image: joshua-ness-322881.jpg
 image_link: https://unsplash.com/photos/cqyfuX_x_ag
 photographer: Joshua Ness
@@ -14,6 +14,22 @@ I live in the St Louis, Missouri area, go to church regularly, and love to spend
 
 ## What do I do?
 
-I am a full time developer. I currently work for <a href="http://www.metrogistics.com" target="_blank" rel="nofollow">Metrogistics</a>, a vehicle transportation brokerage company, where I help build and maintain all of the company's internal applications. I specialize in building web based applications with Laravel and Vue.JS and I really enjoy building SPAs (single page applications).
+I am a full-stack developer. I specialize in building web based applications with Laravel and Vue.JS and I really enjoy building SPAs (single page applications) and fluid, easy-to-use UI's.
 
-I have worked for a couple of web development firms in the past: <a href="http://www.blusolutions.com" target="_blank" rel="nofollow">BluSolutions</a>, an agency specializing in car dealership websites, and <a href="https://www.prochurch.com" target="_blank" rel="nofollow">Divine Design (now ProChurch)</a>, an agency specializing in church websites.
+I currently work for the <a href="https://www.314allstar.com" target="_blank" rel="nofollow">All Star</a> dealership in Bridgeton, Missouri building applications and websites to help increase sales and improve inventory pricing.
+
+I have previously worked for <a href="https://acertusdelivers.com/" target="_blank" rel="nofollow">Metrogistics</a> (now branded as Acertus) a vehicle transportation brokerage company, where I helped build and maintain all of the company's internal applications.
+
+I have also worked for a couple of web development firms in the past: <a href="http://www.blusolutions.com" target="_blank" rel="nofollow">BluSolutions</a>, an agency specializing in car dealership websites, and <a href="https://www.prochurch.com" target="_blank" rel="nofollow">Divine Design (now ProChurch)</a>, an agency specializing in church websites.
+
+<hr>
+
+If you are interested in hiring me, I can provide a resume on request. You can reach me on:
+
+<ul class="list-inline">
+    @foreach($page->social as $social)
+        <li class="list-inline-item"><a href="{{ $social['url'] }}" class="social-icon mr-3" target="_blank" title="{{ $social['label'] }}">
+            <i class="fa fa-{!! $social['icon'] !!}"></i> {{ $social['label'] }}
+        </a></li>
+    @endforeach
+</ul>

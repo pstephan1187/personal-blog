@@ -5,7 +5,7 @@
                 <h1 class="display-3 mb-0">Patrick Stephan</h1>
                 <h3 class="display-5 mb-4">Web Developer</h3>
                 <p class="lead">
-                    I am a self taught web developer. I enjoy programming web based applications and fiddling around with code. <span class="d-none d-md-inline">My focus is on PHP and back-end developing, but I can be a full-stack developer when the time calls for it.</span> I love the Laravel Framework and Vue.js.
+                    I am a self taught web developer. I enjoy programming web based applications and fiddling around with code. <span class="d-none d-md-inline">I enjoy building rich, user-friendly interfaces using Vue.js and Tailwind CSS and server-side applications using laravel.</span>
                 </p>
                 <hr class="my-4">
                 <p>
